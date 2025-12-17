@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Advanced CSS Transforms and Transitions</title>
+<style>
+  /* ---------- Basic Page Styling ---------- */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f9f9f9;
+  }
+
+  header {
+    background: #3498db;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+
+  section {
+    padding: 40px;
+    margin: 20px;
+    background: #fff;
+    border-radius: 10px;
+    border: 2px solid #eee;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+  }
+
+  section:hover {
+    transform: scale(1.03);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  }
+
+  h2 {
+    color: #333;
+  }
+
+  /* ---------- Image Gallery ---------- */
+  .gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .gallery img {
+    width: 220px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: all 0.4s ease;
+  }
+
+  .gallery img:hover {
+    transform: scale(1.1) rotate(3deg);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  }
+
+  /* ---------- Navigation Menu ---------- */
+  nav {
+    background: #2c3e50;
+    padding: 15px;
+  }
+
+  nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav li {
+    margin: 0 15px;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+
+  nav a:hover {
+    color: #f1c40f;
+  }
+
+  /* ---------- Responsive Vertical Menu ---------- */
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+    nav li {
+      margin: 10px 0;
+    }
+  }
+</style>
+</head>
+<body>
+
+  <header>
+    <h1>My Advanced CSS Page</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Gallery</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section>
+    <h2>About This Page</h2>
+    <p>This page demonstrates advanced CSS transitions, transforms, and layout styling. Hover over sections and images to see animations in action.</p>
+  </section>
+
+  <section>
+    <h2>Image Gallery</h2>
+    <div class="gallery">
+    <img src="https://tse4.mm.bing.net/th/id/OIP.VU5WZ30doc8fmnRj_By8hAHaFF?cb=ucfimgc2&w=1213&h=832&rs=1&pid=ImgDetMain&o=7&rm=3">
+    <img src="https://i.pinimg.com/736x/b7/30/c6/b730c6ff1709ba424b84738321abc0c3.jpg">
+    <img src="https://tse4.mm.bing.net/th/id/OIP.oLYu6q-kENTP7xc-iM_BYAHaFU?cb=ucfimgc2&rs=1&pid=ImgDetMain&o=7&rm=3">
+
+  </section>
+
+</body>
+</html>

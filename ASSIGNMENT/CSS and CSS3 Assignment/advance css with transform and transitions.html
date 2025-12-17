@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Gallery with Transitions</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #fafafa;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .gallery img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    transition: all 0.4s ease;
+    border-radius: 10px;
+  }
+
+  .gallery img:hover {
+    transform: scale(1.1) rotate(3deg);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+  }
+</style>
+</head>
+<body>
+  <h1>Image Gallery</h1>
+  <div class="gallery">
+    <img src="https://tse4.mm.bing.net/th/id/OIP.VU5WZ30doc8fmnRj_By8hAHaFF?cb=ucfimgc2&w=1213&h=832&rs=1&pid=ImgDetMain&o=7&rm=3">
+    <img src="https://i.pinimg.com/736x/b7/30/c6/b730c6ff1709ba424b84738321abc0c3.jpg">
+    <img src="https://tse4.mm.bing.net/th/id/OIP.oLYu6q-kENTP7xc-iM_BYAHaFU?cb=ucfimgc2&rs=1&pid=ImgDetMain&o=7&rm=3">
+  </div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Design with Media Queries</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: lightblue;   /* desktop view */
+      margin: 0;
+    }
+
+    .container {
+      width: 80%;
+      margin: auto;
+      border: 2px solid black;
+      padding: 20px;
+    }
+
+    /* ---------- Tablet View ---------- */
+    @media (max-width: 768px) {
+      body {
+        background-color: lightgreen;
+      }
+      .container {
+        width: 90%;
+      }
+    }
+
+    /* ---------- Mobile View ---------- */
+    @media (max-width: 480px) {
+      body {
+        background-color: lightcoral;
+      }
+      .container {
+        width: 100%;
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Responsive Design Example</h1>
+    <p>The background color and layout change depending on the device size.</p>
+  </div>
+</body>
+</html>

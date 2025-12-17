@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Variables</title>
+<style>
+  :root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --text-color: #333;
+  }
+
+  body {
+    background: var(--secondary-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    margin: 0;
+  }
+
+  header, footer {
+    background: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 15px;
+  }
+
+  main {
+    padding: 20px;
+    background: #fff;
+  }
+</style>
+</head>
+<body>
+  <header>Header</header>
+  <main>
+    <h1>Welcome</h1>
+    <p>This page uses CSS variables for consistent colors.</p>
+  </main>
+  <footer>Footer</footer>
+</body>
+</html>

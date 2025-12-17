@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pseudo Classes</title>
+<style>
+  a {
+    color: blue;
+    text-decoration: none;
+    margin-right: 15px;
+  }
+  a:hover {
+    color: red;
+  }
+  a:visited {
+    color: purple;
+  }
+  a:active {
+    color: green;
+  }
+
+  h2::before {
+    content: "★ ";
+    color: gold;
+  }
+
+  p::first-line {
+    font-weight: bold;
+    color: darkblue;
+  }
+</style>
+</head>
+<body>
+  <h2>My Links</h2>
+  <a href="#">Home</a>
+  <a href="#">About</a>
+  <a href="#">Contact</a>
+
+  <p>This is a paragraph where only the first line is styled differently using the ::first-line pseudo-element. The rest of the text remains normal.</p>
+</body>
+</html>
